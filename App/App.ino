@@ -116,6 +116,7 @@ void setup(){
     */
 
   // Compass initialization
+  // Serial.begin(9600);
   Wire.begin(); // Begin I2C communication
 
   compass.init(); // Initialize the LIS3MDL compass

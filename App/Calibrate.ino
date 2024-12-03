@@ -16,7 +16,7 @@ void Calibrate(){
           compass.read(); // Read the current compass data
           
           // Initialize min/max values for calibration
-          LIS3MDL::vector<int16_t> running_min = {-32767, -32767, -32767}, running_max = {32767, 32767, 32767}; 
+          LIS3MDL::vector<int16_t> running_min = {32767, 32767, 32767}, running_max = {-32768, -32768, -32768}; 
 
           /*
           * Running Min/Max Calculation:
@@ -33,6 +33,11 @@ void Calibrate(){
           running_max.x = max(running_max.x, compass.m.x); // Track maximum x value
           running_max.y = max(running_max.y, compass.m.y); // Track maximum y value
           running_max.z = max(running_max.z, compass.m.z); // Track maximum z value
+
+          // snprintf(report, sizeof(report), "min: {%+6d, %+6d, %+6d}   max: {%+6d, %+6d, %+6d}",
+          // running_min.x, running_min.y, running_min.z,
+          // running_max.x, running_max.y, running_max.z);
+          // Serial.println(report);
     
           /*
           * Displaying Calibration Progress:
