@@ -11,17 +11,17 @@
  */
 
 // Libraries
-#include <LiquidCrystal_I2C.h> // LCD display library with I2C communication
+#include <LiquidCrystal_I2C.h> // LCD display library with I2C communication by Frank de Brabander
 #include <Wire.h> // I2C communication library
-#include <LIS3MDL.h> // Library for LIS3MDL compass and accelerometer module
-#include <LSM6.h>
+#include <LIS3MDL.h> // Library for LIS3MDL compass and accelerometer module by Pololu
+#include <LSM6.h> // Library for accelerometer and gyro by Pololu
 
 // 3-axis gyroscope and 3-axis accelerometer
 LSM6 accelerometer; 
 // Compass/accelerometer. Defines pins A4 (SDA) and A5 (SCL)
 LIS3MDL compass;
 // Set the compass calibration range
-LIS3MDL::vector<int16_t> running_min = {-32767, -32767, -32767}, running_max = {32767, 32767, 32767};
+LIS3MDL::vector<int16_t> running_min = {-6732, -3167, -5022}, running_max = {-287, +2147, +2649};
 
 // Constants: LCD/Menus
 LiquidCrystal_I2C lcd(0x27, 20, 3); // LCD object with I2C address 0x27, 20 columns, 3 rows
@@ -116,7 +116,7 @@ void setup(){
     */
 
   // Compass initialization
-  // Serial.begin(9600);
+  Serial.begin(9600);
   Wire.begin(); // Begin I2C communication
 
   compass.init(); // Initialize the LIS3MDL compass
@@ -126,7 +126,7 @@ void setup(){
   accelerometer.enableDefault(); // Set default settings for the accelerometer
 
   // Auto calibration of the compass
-  Calibrate();
+  //Calibrate();
   percent = 0; // Reset progress percentage
   lcd.clear(); // Clear the LCD screen
 }

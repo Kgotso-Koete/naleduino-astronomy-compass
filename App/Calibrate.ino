@@ -28,16 +28,16 @@ void Calibrate(){
           // Update running_min and running_max based on current compass readings
           running_min.x = min(running_min.x, compass.m.x); // Track minimum x value
           running_min.y = min(running_min.y, compass.m.y); // Track minimum y value
-          running_min.z = min(running_min.z, compass.m.z); // Track minimum z valu
+          running_min.z = min(running_min.z, compass.m.z); // Track minimum z value
 
           running_max.x = max(running_max.x, compass.m.x); // Track maximum x value
           running_max.y = max(running_max.y, compass.m.y); // Track maximum y value
           running_max.z = max(running_max.z, compass.m.z); // Track maximum z value
 
-          // snprintf(report, sizeof(report), "min: {%+6d, %+6d, %+6d}   max: {%+6d, %+6d, %+6d}",
-          // running_min.x, running_min.y, running_min.z,
-          // running_max.x, running_max.y, running_max.z);
-          // Serial.println(report);
+          snprintf(report, sizeof(report), "min: {%+6d, %+6d, %+6d}   max: {%+6d, %+6d, %+6d}",
+          running_min.x, running_min.y, running_min.z,
+          running_max.x, running_max.y, running_max.z);
+          Serial.println(report);
     
           /*
           * Displaying Calibration Progress:
@@ -87,6 +87,7 @@ void Calibrate(){
             percent = 0;
             delay(1000); // Delay to show full calibration
           }
+
           delay(100); // Brief delay to slow the calibration process visually
           calibrationCounter++; // Increment calibrationCounter by 1
     

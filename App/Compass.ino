@@ -1,6 +1,6 @@
 /*
   * Function Purpose:
-  * The Compasso function displays the heading value of the compass along with the corresponding cardinal direction on the LCD screen.
+  * The Compass function displays the heading value of the compass along with the corresponding cardinal direction on the LCD screen.
   * Behavior Summary:
   *   The first line of the LCD shows the title < Magnetic Compass >.
   *   The second line dynamically updates to show:
