@@ -113,7 +113,7 @@ Special thanks to [Armando LeonardoS](https://www.instructables.com/member/Arman
 
 ## Experiment outcomes
 
-It was a good experiment and I am grateful that Armano put this together. I would not recommend this project though because an IMU based compass can be easily affected by interference from metals on the telescope. They are also tricky to calibrate but are not accurate once calibrated. Vladimir Atehortúa has [documented](https://github.com/vlaate/vladsc) his journey building a similar device and ended up winvesting more in an encoder based DSC. I actually built Vladimir Atehortúa's encoder based [Dobsonian DSC](https://github.com/vlaate/DobsonianDSC) and it's a much better investment. The cheapest low-no friction navitation system is the Raspberry Pi based [Cedar Solver](https://github.com/smroid/cedar-server?tab=readme-ov-file) by Steven Rosenthal.
+It was a good experiment and I am grateful that Armano put this together. I would not recommend building this project if money is scarce. This is because an IMU based compass can be easily affected by interference from metals on the telescope. They are also tricky to calibrate but are not accurate once calibrated. Vladimir Atehortúa has [documented](https://github.com/vlaate/vladsc) his journey building a similar device and ended up winvesting more in an encoder based DSC. I actually built Vladimir Atehortúa's encoder based [Dobsonian DSC](https://github.com/vlaate/DobsonianDSC) and it's a much better investment. The cheapest low-no friction navitation system is the Raspberry Pi based [Cedar Solver](https://github.com/smroid/cedar-server?tab=readme-ov-file) by Steven Rosenthal.
 
 ---
 
