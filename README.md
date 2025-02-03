@@ -22,7 +22,7 @@ I struggled to get calibrate the compass and learned that IMU's are not accurate
 | :--------------------------: | :------------------------------: |
 | ![](/images/compass_top.jpg) | ![](/images/compass_circuit.jpg) |
 
-|        Naleduino Side         |     Naleduino Side LCD     |
+|        Naleduino Side         |         Schematic          |
 | :---------------------------: | :------------------------: |
 | ![](/images/compass_side.jpg) | ![](/images/schematic.jpg) |
 
