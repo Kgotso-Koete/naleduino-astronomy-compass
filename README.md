@@ -18,9 +18,9 @@ I struggled to get calibrate the compass and learned that IMU's are not accurate
 
 ## Images
 
-|         Naleduino Top         |        Naleduino Circuit         |
-| :---------------------------: | :------------------------------: |
-| ![](//images/compass_top.jpg) | ![](/images/compass_circuit.jpg) |
+|        Naleduino Top         |        Naleduino Circuit         |
+| :--------------------------: | :------------------------------: |
+| ![](/images/compass_top.jpg) | ![](/images/compass_circuit.jpg) |
 
 |        Naleduino Side         |     Naleduino Side LCD     |
 | :---------------------------: | :------------------------: |
